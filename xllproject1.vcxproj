@@ -13,7 +13,7 @@
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
-  <Import Project="xll.props"/>
+  <Import Project="xll\xll.props"/>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -34,14 +34,6 @@
   </ImportGroup>
   <ItemGroup>
     <ClCompile Include="xllproject1.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="xll.props" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="xll\xll.vcxproj">
-      <Project>{367249bb-b8a3-4671-b095-a5db904dbd6d}</Project>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="xllproject1.h" />
