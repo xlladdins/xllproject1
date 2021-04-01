@@ -20,9 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="xll.props" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="xllproject1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
