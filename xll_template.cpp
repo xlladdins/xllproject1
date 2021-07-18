@@ -14,10 +14,10 @@ AddIn xai_tgamma(
 	// Function Wizard help.
 	.FunctionHelp("Return the Gamma function value.")
 	// Function Wizard category.
-	.Category("CMATH")
+	.Category("MATH")
 	// URL linked to `Help on this function`.
 	.HelpTopic("https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tgamma-tgammaf-tgammal")
-	.Documentation(R"xyzyx( // raw string not containing "xyzyx"
+	.Documentation(R"xyzyx(
 The <i>Gamma</i> function is \(\Gamma(x) = \int_0^\infty t^{x - 1} e^{-t}\,dt\), \(x \ge 0\).
 If \(n\) is a natural number then \(\Gamma(n + 1) = n! = n(n - 1)\cdots 1\).
 <p>
@@ -51,3 +51,15 @@ int WINAPI xll_macro(void)
 
 	return TRUE;
 }
+
+#ifdef _DEBUG
+
+// Create XML documentation and index.html in `$(TargetPath)` folder.
+// Use `xsltproc file.xml -o file.html` to create HTML documentation.
+Auto<Open> xao_template_docs([]() {
+
+	return Documentation("MATH", "Documentation for the xll_template add-in.");
+
+});
+
+#endif // _DEBG
