@@ -62,4 +62,4 @@ Auto<Open> xao_template_docs([]() {
 
 });
 
-#endif // _DEBG
+#endif // _DEBUG
